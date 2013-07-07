@@ -2,7 +2,6 @@ module Informo
   class DPKG
     def initialize()
       @@dpkgquery = "dpkg-query"
-      @@dpkgfields = ["version","architecture","maintainer","description","status"]
     end
 
     # return array of packages 
