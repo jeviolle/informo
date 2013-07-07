@@ -43,5 +43,19 @@ module Informo
 
       return details
     end
+
+    def host_bus_adapters
+      list = Array.new
+
+      `lspci`.each_line do |line|
+        if line =~ /fib|hba/i        
+          
+          list.push($1) if line =~ /.+?:\s+(.+)/ 
+        end
+      end
+
+      return list
+    end
+
   end
 end
