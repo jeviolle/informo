@@ -1,5 +1,12 @@
 module Informo  
+  ##
+  # This class is used to return various physical memory related information. For
+  # example: how many modules are installed, module size, etc
+  #
+  # For virtualized systems some of these might not be applicable
   class MEMORY
+    ##
+    # returns the maximum size for memory modules
     def max_module_size
       `dmidecode -t 5`.each_line do |line|
         if line =~ /Maximum Memory Module Size.+?(\d+)\s+/
@@ -8,7 +15,8 @@ module Informo
         end
       end
     end
-  
+    ##
+    # returns the maximum amount of memory slots. 
     def max_modules
       `dmidecode -t 5`.each_line do |line|
         if line =~ /Associated Memory Slots.+?(\d+)\s+/
@@ -17,7 +25,8 @@ module Informo
         end
       end
     end
-  
+    ##
+    # returns the maximum amount of memory supported by the bios/system
     def max_capacity
       `dmidecode -t 5`.each_line do |line|
         if line =~ /Maximum Total Memory Size.+?(\d+)\s+/
@@ -26,7 +35,8 @@ module Informo
         end
       end
     end
-  
+    ##
+    # returns the amount of physical memory installed
     def installed
       `free -m`.each_line do |line|
         if line =~ /^Mem.+?(\d+)\s+/
@@ -36,6 +46,13 @@ module Informo
       end
     end
   
+    ##
+    # returns details for memory installed in each memory slot
+    #
+    # - size
+    # - location on board
+    # - speed
+    # - form factor
     def slots
       count = -1
       modules = Array.new

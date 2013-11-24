@@ -1,5 +1,10 @@
 module Informo
+  ##
+  # This class is used to provide information about the network configuration of the system
+  # and physical networking hardware available to the system.
   class NETWORK
+    ##
+    # returns an array of available network interfaces
     def interfaces
       interfaces = Array.new
       if File.exists?("/sbin/ip")
@@ -14,7 +19,13 @@ module Informo
   
       return interfaces
     end
-  
+    ##
+    # returns hash of the following info for a given network interface
+    #
+    # - ip address
+    # - subnet mask
+    # - broadcast address
+    # - mtu
     def interface_details(dev)
       details = Hash.new
       details["ip6"] = Array.new
@@ -43,7 +54,8 @@ module Informo
   
       return details
     end
-  
+    ##
+    # returns an array of installed HBAs
     def host_bus_adapters
       list = Array.new
   
