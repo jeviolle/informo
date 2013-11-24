@@ -14,6 +14,18 @@ require 'informo/version.rb'
 # a glorified wrapper around existing native commands and
 # tries to avoid reinventing wheels that already exist inside
 # GNU/Linux.
+#
+# The following classes are available:
+#
+# - Informo::BIOS
+# - Informo::DPKG
+# - Informo::MEMORY
+# - Informo::NETWORK
+# - Informo::PROCESSOR
+# - Informo::RPM
+# - Informo::STORAGE
+# - Informo::SYSTEM
+#
 module Informo
 
 end
