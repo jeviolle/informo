@@ -8,6 +8,12 @@ require 'informo/storage.rb'
 require 'informo/system.rb'
 require 'informo/version.rb'
 
+##
+# Informo make's it easy to get system information 
+# for Linux systems from inside ruby scripts. Currently it is 
+# a glorified wrapper around existing native commands and
+# tries to avoid reinventing wheels that already exist inside
+# GNU/Linux.
 module Informo
 
 end
