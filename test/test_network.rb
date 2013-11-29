@@ -7,7 +7,7 @@ class NetworkTest < Test::Unit::TestCase
   def test_interfaces
     n = Informo::NETWORK.new
     interfaces = n.interfaces
-    assert_match '/\w+\d+/', interfaces[0]
+    assert_match /\w+\d+/, interfaces[0]
   end
 
   def test_inteface_details
