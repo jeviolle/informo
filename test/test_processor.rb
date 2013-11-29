@@ -12,7 +12,7 @@ class ProcessorTest < Test::Unit::TestCase
   def test_details
     p = Informo::PROCESSOR.new
     details = p.details
-    assert_match /MHz/, details[0]['cpu_MHz']
+    assert_match /\d+\.\d+/, details[0]['cpu_MHz']
   end
 
 end

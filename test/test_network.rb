@@ -12,7 +12,7 @@ class NetworkTest < Test::Unit::TestCase
 
   def test_inteface_details
     n = Informo::NETWORK.new
-    details = n.inteface_details('lo')
+    details = n.interface_details('lo')
     assert_equal '127.0.0.1', details['addr']
   end
 
