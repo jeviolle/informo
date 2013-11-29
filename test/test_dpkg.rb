@@ -1,5 +1,6 @@
 require 'test/unit'
-require 'Informo'
+require File.join(File.dirname(__FILE__),"../lib/informo/dpkg") if RUBY_VERSION.to_f < 1.9
+require 'informo/dpkg' if RUBY_VERSION.to_f >= 1.9
 
 class DpkgTest < Test::Unit::TestCase
   ##

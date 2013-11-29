@@ -1,5 +1,6 @@
 require 'test/unit'
-require 'Informo'
+require File.join(File.dirname(__FILE__),"../lib/informo/network") if RUBY_VERSION.to_f < 1.9
+require 'informo/network' if RUBY_VERSION.to_f >= 1.9
 
 class NetworkTest < Test::Unit::TestCase
 
