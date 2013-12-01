@@ -4,7 +4,7 @@ module Informo
   ##
   # This class is used to return information about installed packages
   # for systems utilizing debian/ubuntu package formats
-  class DPKG
+  class Dpkg
     def initialize()
       @@dpkgquery = "dpkg-query"
       @@pkginfo = "/var/lib/dpkg/info"

@@ -17,14 +17,14 @@ require 'informo/version.rb'
 #
 # The following classes are available:
 #
-# - Informo::BIOS
-# - Informo::DPKG
-# - Informo::MEMORY
-# - Informo::NETWORK
-# - Informo::PROCESSOR
-# - Informo::RPM
-# - Informo::STORAGE
-# - Informo::SYSTEM
+# - Informo::Bios
+# - Informo::Dpkg
+# - Informo::Memory
+# - Informo::Network
+# - Informo::Processor
+# - Informo::Rpm
+# - Informo::Storage
+# - Informo::System
 #
 module Informo
 

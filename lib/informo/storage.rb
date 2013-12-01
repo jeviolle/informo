@@ -2,7 +2,7 @@ module Informo
   ##
   # This class is used to get info for the available and configured storage. For
   # example: number of disks, partition info, etc...
-  class STORAGE
+  class Storage
     ##
     # returns the total number of disks 
     def drive_count

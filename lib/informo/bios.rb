@@ -1,7 +1,7 @@
 module Informo
   ##
   # Allows for the retrieval of bios related information.
-  class BIOS
+  class Bios
     ##
     # returns the serial number as a string
     def serial

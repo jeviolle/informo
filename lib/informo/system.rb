@@ -4,7 +4,7 @@ module Informo
   ##
   # This class is used to get some generic information of the
   # host in question; ie: distro name, version, etc
-  class SYSTEM
+  class System
     ##
     # returns the linux distro 
     def distro

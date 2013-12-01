@@ -2,7 +2,7 @@ module Informo
   ##
   # This class is used to provide information about the network configuration of the system
   # and physical networking hardware available to the system.
-  class NETWORK
+  class Network
     ##
     # returns an array of available network interfaces
     def interfaces

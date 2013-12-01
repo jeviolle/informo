@@ -2,7 +2,7 @@ module Informo
   ##
   # This class is used to retrieve information about the processors available
   # to the system.
-  class PROCESSOR
+  class Processor
     ##
     # returns the total number of processors on the system
     def count

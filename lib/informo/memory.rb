@@ -4,7 +4,7 @@ module Informo
   # example: how many modules are installed, module size, etc
   #
   # For virtualized systems some of these might not be applicable
-  class MEMORY
+  class Memory
     ##
     # returns the maximum size for memory modules
     def max_module_size

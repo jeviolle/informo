@@ -3,7 +3,7 @@ require 'time'
 module Informo
   ##
   # This class is used to get information about installed RPMs
-  class RPM
+  class Rpm
     def initialize()
       @@rpmquery = "rpm"
     end
