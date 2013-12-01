@@ -5,12 +5,12 @@ require 'informo/processor' if RUBY_VERSION.to_f >= 1.9
 class ProcessorTest < Test::Unit::TestCase
 
   def test_count
-    p = Informo::PROCESSOR.new
+    p = Informo::Processor.new
     assert_match /\d+/, p.count
   end
 
   def test_details
-    p = Informo::PROCESSOR.new
+    p = Informo::Processor.new
     details = p.details
     assert_match /\d+\.\d+/, details[0]['cpu_MHz']
   end
