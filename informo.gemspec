@@ -7,6 +7,6 @@ Gem::Specification.new 'informo', Informo::VERSION do |s|
   s.description	= 'Informo is used to gather information from your linux system'
   s.files	= `git ls-files`.split("\n") - %w[]
   s.author	= 'Rick Briganti'
-  s.email	= 'jeviolle@gmail.com'
+  s.email	= 'jeviolle@newaliases.org'
   s.homepage	= 'http://github.com/jeviolle/informo'
 end
