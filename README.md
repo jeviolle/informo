@@ -1,6 +1,6 @@
 # Informo 
 
-A ruby gem for retrieving info from linux systems.
+A ruby gem for retrieving info from linux systems. Informo make's it easy to get system information for Linux systems from inside ruby scripts. Currently it is a glorified wrapper around existing native commands and tries to avoid reinventing wheels that already exist inside GNU/Linux
 
 ## Installation
 
