@@ -26,7 +26,7 @@ class MemoryTest < Test::Unit::TestCase
 
   def test_slots
     m = Informo::Memory.new
-    assert_match /\d+/, m.slots[0]['speed']
+    assert_not_nil m.slots[0]['speed']
   end
 
 end

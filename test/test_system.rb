@@ -16,7 +16,7 @@ class SystemTest < Test::Unit::TestCase
 
   def test_numa
     s = Informo::System.new
-    assert_instance_of TrueClass s.numa?
+    assert_not_nil s.numa?
   end
 
   def test_kernel

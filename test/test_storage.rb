@@ -6,13 +6,14 @@ class StorageTest < Test::Unit::TestCase
 
   def test_drive_count
     s = Informo::Storage.new
-    assert_kind_of Integer s.drive_count
+    assert_kind_of Integer, s.drive_count
   end
 
   def test_drive_details
     s = Informo::Storage.new
     drives = s.drives
-    assert_match /^\d/, s.drive_details(drives[0]['size'])
+    size = s.drive_details(drives[0])['size']
+    assert_match /^\d.+/, size
   end
 
   def test_mount_details

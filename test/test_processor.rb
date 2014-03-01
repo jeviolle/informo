@@ -6,7 +6,7 @@ class ProcessorTest < Test::Unit::TestCase
 
   def test_count
     p = Informo::Processor.new
-    assert_match /\d+/, p.count
+    assert_kind_of Integer, p.count
   end
 
   def test_details
