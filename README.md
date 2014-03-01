@@ -12,7 +12,7 @@ $ gem install informo
 
 ## Documentation
 
-[rubydoc](http://rubydoc.info/github/jeviolle/informo/)
+[rubydoc](http://rubydoc.info/github/jeviolle/informo/frames)
 
 ## Usage
 
