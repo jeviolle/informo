@@ -4,8 +4,11 @@ A ruby gem for retrieving info from linux systems.
 
 ## Installation
 
+clone this repo
+
 ```
-$ gem install informo
+$ gem build informo.gemspec
+$ gem install informo-1.0.gem
 ```
 
 ## Usage
