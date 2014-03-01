@@ -7,9 +7,12 @@ A ruby gem for retrieving info from linux systems.
 clone this repo
 
 ```
-$ gem build informo.gemspec
-$ gem install informo-1.0.gem
+$ gem install informo
 ```
+
+## Documentation
+
+[rubydoc](http://rubydoc.info/github/jeviolle/informo/)
 
 ## Usage
 
