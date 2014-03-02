@@ -1,5 +1,3 @@
-require 'time'
-
 module Informo  
   ##
   # This class is used to return information about installed packages
@@ -56,7 +54,7 @@ module Informo
     ##
     # returns the installation date of the given package 
     def get_installdate(name)
-      create_time = Time.at(File.stat(@@pkginfo + "/#{name}.list")).ctime.utc
+      create_time = File.stat(@@pkginfo + "/#{name}.list").ctime.utc
       return create_time
     end
     ##

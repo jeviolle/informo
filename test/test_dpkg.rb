@@ -5,7 +5,7 @@ require 'informo/dpkg' if RUBY_VERSION.to_f >= 1.9
 class DpkgTest < Test::Unit::TestCase
   ##
   # required package for test. this package is requried on every debian/ubuntu system
-  R_PKG = 'glibc'
+  R_PKG = 'at'
 
   def test_get_packages
     dpkg = Informo::Dpkg.new
@@ -46,7 +46,7 @@ class DpkgTest < Test::Unit::TestCase
   def test_get_status
     dpkg = Informo::Dpkg.new
     status = dpkg.get_status(R_PKG)
-    assert_equal 'ii', status
+    assert_equal 'install ok installed', status
   end
 
   def test_get_installdate
